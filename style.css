@@ -1,0 +1,157 @@
+body{
+  padding-top: 90px;
+}
+
+.wolt-nav .wolt-active{
+  background-color: rgb(93, 93, 255);
+  color: white;
+  border-radius: 25px;
+}
+
+.wolt-nav .wolt-inactive{
+  border-radius: 25px;
+  color: rgb(125, 125, 125);
+}
+
+.wolt-nav .wolt-inactive:hover{
+  background-color: gray;
+  color: black;
+}
+
+.wolt-nav .nav-item{
+  margin: 10px;
+}
+
+.big-photo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#TagamNaAbylay{
+  background-image: url('https://imageproxy.wolt.com/venue/64be5fba82a6296b82368740/ff960ab4-3125-11ee-b2e1-9ade4efaf0a0_5c41cbe6_0a2c_11eb_a384_723e22918cf6_7m3a7273.jpg?w=1920');
+}
+
+#SixCafee{
+  background-image: url('https://imageproxy.wolt.com/venue/60f7ebb72e5b8e65bd2f8a8b/1623f8aa-ef9b-11eb-a991-fac2842a7456_7m3a8103.jpg?w=1920');
+}
+
+#Doner_na_Satpaeva{
+  background-image: url('https://imageproxy.wolt.com/venue/653f7c920b7d77a12cdf8a9b/05b5bf32-770a-11ee-883f-eac34afc7ca7_e27db606_9568_11ed_a523_ea81ee942580_img_7087_copy.jpg?w=1920');
+}
+
+.big-photo__inside-stuff {
+  text-align: center;
+  color: rgb(255, 255, 255); /* Choose a color that contrasts well with your background */
+  font-family: sans-serif; /* Example custom font for Rick and Morty style */
+  padding: 20px;
+  
+  max-width: 80%; /* Adjust the width as needed */
+}
+
+/* Adjust the size of the images */
+.card-img-top {
+  max-width: 60%; /* Adjust the percentage as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image in the card */
+}
+
+/* Optional: Adjust the size of the cards */
+.card {
+  max-width: 80%; /* Adjust as necessary */
+  margin: 0 auto; /* Center the card if needed */
+}
+
+.card-footer{
+  background-color: white;
+  color: rgb(0, 179, 255);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: black;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .card-img-top {
+      max-width: 100%;
+  }
+  .card {
+      max-width: 100%;
+  }
+}
+
+@media(max-width: 650px){
+  .navFirstIMG{
+    width: 60px;
+  }
+
+  .navSecondIMG{
+    width: 40px;
+  }
+
+  .navSearcher{
+    width: 120px;
+    font-size: 10px;
+  }
+
+  .logBTN{
+    width: 80px;
+    font-size: 10px;
+  }
+
+  .regBTN{
+    width: 80px;
+    font-size: 10px;
+  }  
+}
+
+@media(max-width: 420px){
+  .navFirstIMG{
+    width: 40px;
+  }
+
+  .navSecondIMG{
+    width: 20px;
+  }
+
+  .navSearcher{
+    width: 80px;
+    font-size: 6px;
+  }
+
+  .logBTN{
+    width: 40px;
+    font-size: 5px;
+  }
+
+  .regBTN{
+    width: 50px;
+    font-size: 5px;
+  }  
+}
+
+
+
+
+
+.navbar {
+  background-color: #f8f9fa;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: black;
+}
+.form-control {
+  max-width: 300px;
+}

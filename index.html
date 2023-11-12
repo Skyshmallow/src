@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wolt</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand bg-white fixed-top">
+      <div class="container-fluid justify-content border-bottom">
+        <div>
+          <img class="navFirstIMG" src="img/wolt.png" alt="awd">
+          <img class="navSecondIMG" src="img/mesto.png" alt="">
+        </div>
+
+        <div>
+          <!-- <input type="text" placeholder="Поиск в Wolt..." class="rounded-pill bg-light border-1"> -->
+          <input type="text" class="navSearcher form-control bg-light rounded-pill" placeholder="Поиск в Wolt...">
+        </div>
+
+        <div>
+          <button class="logBTN btn btn-light">
+            Войти
+          </button>
+
+          <button class="regBTN btn btn-primary">
+            Регистрация
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  
+  <ul class="wolt-nav nav justify-content-center mt-3">
+    <li class="nav-item">
+      <a class="nav-link wolt-inactive" aria-current="page" href="#">Рекомендации</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link wolt-active" href="#">Рестораны</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link wolt-inactive" href="#">Магазины</a>
+    </li>
+  </ul>
+  
+  <main>
+    <section>
+      <div class="container mt-5">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <h1 class="display-5 fw-bold">Рестораны - Алматы </h1>
+            <div class="d-flex" role="search">
+
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" >Сортировка по <b>Рекомендованные</b></a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal -->
+            </div>
+          </div>
+        </nav>
+<!--         
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <h1 class="display-6">Категории</h1>
+            <div class="d-flex">
+              <div class="btn btn-outline-primary">Left</div>
+              <div class="btn btn-outline-primary">Right</div>
+            </div>
+          </div>
+        </nav> -->
+
+        <div class="categories mt-5">
+          <div class="row">
+            <h2>Категории</h2>
+          </div>
+  
+          <div class="row owl-carousel">
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/a69b5aea-c5a8-11ea-9f48-2e3b484a03e4_0b2c3eb5_ae95_4bff_9144_7f7c93ea74f9.jpg-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Бургеры</h5>
+                  <p class="card-text">82 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/53129366-c5a8-11ea-8a78-822e244794a0_52b897cd_ac18_4cb5_9921_2653f1d38650.jpg-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Пицца</h5>
+                  <p class="card-text">152 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/90afac70-c5af-11ea-8a78-822e244794a0_7e31d123_8ff4_4211_9f17_88ae65a175bd.jpg-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Десерты</h5>
+                  <p class="card-text">93 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/2d24d3ee-c5b2-11ea-a452-2e3b484a03e4_331daa86_a0e3_45da_bd06_05f8a6df06f3.jpg-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Завтрак</h5>
+                  <p class="card-text">97 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/fe4c3f8a-c5a7-11ea-a452-2e3b484a03e4_e756ebaf_aa52_41ef_8256_31f6d788b8e2.jpg-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Суши</h5>
+                  <p class="card-text">62 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/fd1d18e0-c5a8-11ea-8a78-822e244794a0_a1852dc9_4afb_4877_9659_793adcb0f87b.jpg-md?w=300img/salat.avif" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Салаты</h5>
+                  <p class="card-text">116 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/7f77b0a2-c5a9-11ea-b72a-c2fc8785833c_57601b6c_2bf1_4240_a6d0_da0d7dca0517.jpg-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Супы</h5>
+                  <p class="card-text">88 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/8469121c-cb98-11ec-aea3-6e751d6aff91_87f42415_c563_4359_a7bb_f31d7c8f6378.png-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Донер</h5>
+                  <p class="card-text">33 заведений</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 m-2">
+              <div class="card" style="width: 18rem">
+                <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/f4af6112-c5ae-11ea-a1b0-c287d2abdf0c_aab191cd_762d_43f5_80a2_6fc17f10ff9a.jpg-md?w=300" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Кафе</h5>
+                  <p class="card-text">60 заведений</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+          <h2 class="ml-5">Все рестораны</h2>
+        </div>
+
+        <div class="row d-flex">
+          <div class="col-xl-4 col-lg-12 col-md-6 col-sm-12 col-xs-12 pl-5"> <a href="doner_na_satpaeva.html">
+              <div class="card" style="width: 30rem;">
+                <img src="https://imageproxy.wolt.com/venue/653f7c920b7d77a12cdf8a9b/0310e676-770a-11ee-878b-6ece5e7ce9b2_d7064f36_9568_11ed_8dde_5ebfb5d56467_img_7088_copy.jpg?w=600" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Донер на Сатпаева 3</h5>
+                  <p class="card-text">
+                    Вкуснейший донер
+                  </p>
+                  <p class="card-delivery-price">
+                    <svg width="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15"
+                      class="sc-5f3118f0-32 jrYyxA">
+                      <title>Wolt+</title>
+                      <rect width="22.207" height="15" rx="7.5" fill="skyblue"></rect>
+                      <path
+                        d="M18.203 7.388a.281.281 0 0 0-.282-.33H15.81l.377-2.177a.24.24 0 0 0-.235-.281h-.413a.238.238 0 0 0-.235.198l-.398 2.25h-2.21a.281.281 0 0 0-.281.233l-.06.336a.282.282 0 0 0 .282.329h2.116l-.382 2.172a.236.236 0 0 0 .133.26.238.238 0 0 0 .101.022h.414a.237.237 0 0 0 .235-.197l.397-2.25h2.223a.281.281 0 0 0 .282-.232l.047-.333ZM10.64 4.32c-.201 0-.38.01-.469.019-.177.018-.237.184-.224.348.186 2.37-.341 5.128-.94 5.128-.447 0-.57-1.29-.57-2.436 0-.678.039-1.33.055-1.908.006-.214-.073-.254-.228-.272a1.745 1.745 0 0 0-.642.022c-.179.04-.221.185-.41.63a70.121 70.121 0 0 1-1.848 3.991c-.24-1.783.068-3.51.33-4.773.036-.174-.048-.276-.191-.274-.272.005-.688.013-.876.135-.176.114-.243.236-.293.49-.29 1.444-.48 3.257-.188 4.658.063.303.134.375.263.453.13.08.684.15.9.15.244 0 .468-.065.654-.38.393-.669.71-1.336 1.305-2.623.06 1.676.3 2.991 1.49 2.991 1.575 0 2.593-3.899 2.593-5.775-.002-.493-.25-.575-.71-.575Z">
+                      </path>
+                    </svg>
+                    <span class="sc-5f3118f0-40 sc-5f3118f0-41 dEzDkK jQiVIh">0&nbsp;KZT</span>
+                    
+                    <svg width="15" viewBox="0 0 24 24" class="sc-5f3118f0-31 bNQTtc">
+                      <path
+                        d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0zm0 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.7 12.2c.4.3.6.8.3 1.3-1.2 1.9-2.8 3-5 3.1-2.2-.1-3.8-1-4.8-2.9-.2-.5-.2-.9.1-1.3.2-.3.6-.4 1-.3.4.1.5.4.7.7.7 1.3 1.9 1.9 3.3 1.7 1.2-.1 2-.7 2.8-1.6.1-.2.2-.4.4-.5.2-.4.7-.5 1.2-.2zM16 7c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9 0-1.1.8-1.9 1.9-1.9zM8 7c1 0 1.9.8 1.9 1.9s-.8 1.8-1.9 1.8c-1.1 0-1.9-.8-1.9-1.9C6.1 7.8 7 7 8 7z"
+                        fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                    </svg>
+                    <span>8.8</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-xl-4 col-lg-12 col-md-6 col-sm-12 col-xs-12 pl-5">
+            <a href="sixCofee.html">
+            <div class="card" style="width: 30rem;">
+              <img src="https://imageproxy.wolt.com/venue/60f7ebb72e5b8e65bd2f8a8b/0f39817c-ef9b-11eb-b944-7a6dd1c63e3f_7m3a8095.jpg?w=600" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Six Coffee+Wine</h5>
+                <p class="card-text">
+                    Синергия блюд и напитков
+                </p>
+                <p class="card-delivery-price">
+                  <svg width="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15" class="sc-5f3118f0-32 jrYyxA">
+                    <title>Wolt+</title>
+                    <rect width="22.207" height="15" rx="7.5" fill="skyblue"></rect>
+                    <path
+                      d="M18.203 7.388a.281.281 0 0 0-.282-.33H15.81l.377-2.177a.24.24 0 0 0-.235-.281h-.413a.238.238 0 0 0-.235.198l-.398 2.25h-2.21a.281.281 0 0 0-.281.233l-.06.336a.282.282 0 0 0 .282.329h2.116l-.382 2.172a.236.236 0 0 0 .133.26.238.238 0 0 0 .101.022h.414a.237.237 0 0 0 .235-.197l.397-2.25h2.223a.281.281 0 0 0 .282-.232l.047-.333ZM10.64 4.32c-.201 0-.38.01-.469.019-.177.018-.237.184-.224.348.186 2.37-.341 5.128-.94 5.128-.447 0-.57-1.29-.57-2.436 0-.678.039-1.33.055-1.908.006-.214-.073-.254-.228-.272a1.745 1.745 0 0 0-.642.022c-.179.04-.221.185-.41.63a70.121 70.121 0 0 1-1.848 3.991c-.24-1.783.068-3.51.33-4.773.036-.174-.048-.276-.191-.274-.272.005-.688.013-.876.135-.176.114-.243.236-.293.49-.29 1.444-.48 3.257-.188 4.658.063.303.134.375.263.453.13.08.684.15.9.15.244 0 .468-.065.654-.38.393-.669.71-1.336 1.305-2.623.06 1.676.3 2.991 1.49 2.991 1.575 0 2.593-3.899 2.593-5.775-.002-.493-.25-.575-.71-.575Z">
+                    </path>
+                  </svg>
+                  <span class="sc-5f3118f0-40 sc-5f3118f0-41 dEzDkK jQiVIh">0&nbsp;KZT</span>
+                  <span class="currency-symbol"></span>
+                  <span class="transparent-symbol"></span>
+                  <svg width="15" viewBox="0 0 24 24" class="sc-5f3118f0-31 bNQTtc">
+                    <path
+                      d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0zm0 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.7 12.2c.4.3.6.8.3 1.3-1.2 1.9-2.8 3-5 3.1-2.2-.1-3.8-1-4.8-2.9-.2-.5-.2-.9.1-1.3.2-.3.6-.4 1-.3.4.1.5.4.7.7.7 1.3 1.9 1.9 3.3 1.7 1.2-.1 2-.7 2.8-1.6.1-.2.2-.4.4-.5.2-.4.7-.5 1.2-.2zM16 7c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9 0-1.1.8-1.9 1.9-1.9zM8 7c1 0 1.9.8 1.9 1.9s-.8 1.8-1.9 1.8c-1.1 0-1.9-.8-1.9-1.9C6.1 7.8 7 7 8 7z"
+                      fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                  </svg>
+                  <span>8.6</span>
+                </p>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="col-xl-4 col-lg-12 col-md-6 col-sm-12 col-xs-12 pl-5">
+            <a href="tagam_na_abylay.html">
+            <div class="card" style="width: 30rem;">
+              <img src="https://imageproxy.wolt.com/venue/64be5fba82a6296b82368740/fad298da-3125-11ee-9a0b-d2cc0f517475_572c9aa0_0a2c_11eb_ab71_723e22918cf6_7m3a7264.jpg?w=600" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Тагам на Абылай хана
+                </h5>
+                <p class="card-text">Вкусно как дома!</p>
+                <p class="card-delivery-price">
+                  <svg width="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 15" class="sc-5f3118f0-32 jrYyxA">
+                    <title>Wolt+</title>
+                    <rect width="22.207" height="15" rx="7.5" fill="skyblue"></rect>
+                    <path
+                      d="M18.203 7.388a.281.281 0 0 0-.282-.33H15.81l.377-2.177a.24.24 0 0 0-.235-.281h-.413a.238.238 0 0 0-.235.198l-.398 2.25h-2.21a.281.281 0 0 0-.281.233l-.06.336a.282.282 0 0 0 .282.329h2.116l-.382 2.172a.236.236 0 0 0 .133.26.238.238 0 0 0 .101.022h.414a.237.237 0 0 0 .235-.197l.397-2.25h2.223a.281.281 0 0 0 .282-.232l.047-.333ZM10.64 4.32c-.201 0-.38.01-.469.019-.177.018-.237.184-.224.348.186 2.37-.341 5.128-.94 5.128-.447 0-.57-1.29-.57-2.436 0-.678.039-1.33.055-1.908.006-.214-.073-.254-.228-.272a1.745 1.745 0 0 0-.642.022c-.179.04-.221.185-.41.63a70.121 70.121 0 0 1-1.848 3.991c-.24-1.783.068-3.51.33-4.773.036-.174-.048-.276-.191-.274-.272.005-.688.013-.876.135-.176.114-.243.236-.293.49-.29 1.444-.48 3.257-.188 4.658.063.303.134.375.263.453.13.08.684.15.9.15.244 0 .468-.065.654-.38.393-.669.71-1.336 1.305-2.623.06 1.676.3 2.991 1.49 2.991 1.575 0 2.593-3.899 2.593-5.775-.002-.493-.25-.575-.71-.575Z">
+                    </path>
+                  </svg>
+                  <span class="sc-5f3118f0-40 sc-5f3118f0-41 dEzDkK jQiVIh">0 KZT</span>
+                  <span class="currency-symbol"></span>
+                  <span class="transparent-symbol"></span>
+                  <svg width="15" viewBox="0 0 24 24" class="sc-5f3118f0-31 bNQTtc">
+                    <path
+                      d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0zm0 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.7 12.2c.4.3.6.8.3 1.3-1.2 1.9-2.8 3-5 3.1-2.2-.1-3.8-1-4.8-2.9-.2-.5-.2-.9.1-1.3.2-.3.6-.4 1-.3.4.1.5.4.7.7.7 1.3 1.9 1.9 3.3 1.7 1.2-.1 2-.7 2.8-1.6.1-.2.2-.4.4-.5.2-.4.7-.5 1.2-.2zM16 7c1 0 1.9.8 1.9 1.9s-.8 1.9-1.9 1.9c-1 0-1.9-.8-1.9-1.9 0-1.1.8-1.9 1.9-1.9zM8 7c1 0 1.9.8 1.9 1.9s-.8 1.8-1.9 1.8c-1.1 0-1.9-.8-1.9-1.9C6.1 7.8 7 7 8 7z"
+                      fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path>
+                  </svg>
+                  <span>8.6</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </main>
+
+
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
